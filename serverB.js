@@ -27,7 +27,7 @@ var connection  = require('express-myconnection'),
 app.use(
 
     connection(pgsql,{
-        host     : 'ec2-50-19-219-148.compute-1.amazonaws.com',
+        host     : 'postgres://dowggepadcqdej:djS9n9yKoM1waUYRusvBbUF-Ay@ec2-50-19-219-148.compute-1.amazonaws.com:5432/de9j2qm2r0rvlu',
         user     : 'dowggepadcqdej',
         password : 'djS9n9yKoM1waUYRusvBbUF-Ay',
         port     : '5432',

@@ -24,7 +24,7 @@
     "pgsql": "*"
   },
   "engines": {
-    "node": "0.10.36"
+    "node": "0.10.14"
   },
   "scripts": {
     "start": "node serverB.js"

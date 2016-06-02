@@ -1,7 +1,7 @@
 {
   "name": "NodeJsService",
-  "description": "REST CRUD Example Node.js & Mysql",
+  "description": "REST CRUD Example Node.js & PostgresSQL",
    "repository": "https://github.com/Hiraji/AbstractNode",
-  "keywords": ["node", "express", "static"],
+  "keywords": ["node", "express", "static"]
 
 }

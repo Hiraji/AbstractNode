@@ -1,5 +1,10 @@
 {
-
+  "name": "NodeJsService",
+    "description": "REST CRUD Example Node.js & Mysql",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Hiraji/AbstractNode"
+    },
   "version": "0.0.1",
   "private": true,
   "main": "serverB.js",

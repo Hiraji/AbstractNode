@@ -22,11 +22,11 @@ app.use(cors()); //to allow origins
 
 /*MySql connection */
 var connection  = require('express-myconnection'),
-    mysql = require('pg');
+    pgsql = require('pg');
 
 app.use(
 
-    connection(mysql,{
+    connection(pgsql,{
         host     : 'ec2-50-19-219-148.compute-1.amazonaws.com',
         user     : 'dowggepadcqdej',
         password : 'djS9n9yKoM1waUYRusvBbUF-Ay',

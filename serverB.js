@@ -7,7 +7,7 @@ var express  = require('express'),
     http = require('http'),
     cors = require('cors'),
     expressValidator = require('express-validator');
-var MobileDetect = require('mobile-detect');
+//var MobileDetect = require('mobile-detect');
 
 
 
@@ -38,9 +38,9 @@ app.use(
 
 );
 app.all('/*', function(req, res, next) {
-      var md = new MobileDetect(req.headers['user-agent']);
-console.log( md.os() );
-console.log( md.userAgent() );
+//       var md = new MobileDetect(req.headers['user-agent']);
+// console.log( md.os() );
+// console.log( md.userAgent() );
 
   // Set custom headers for CORS
   res.header('Access-Control-Allow-Headers', 'Content-type,Accept,X-Access-Token,X-Key');

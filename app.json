@@ -1,6 +1,6 @@
 {
   "name": "NodeJsService",
-  "description": "REST CRUD Example Node.js & pgSQL",
+  "description": "REST CRUD Example Node.js & pgsql",
    "repository": "https://github.com/Hiraji/AbstractNode",
   "keywords": ["node", "express", "static"]
 

@@ -1,11 +1,8 @@
 {
   "name": "NodeJsService",
   "description": "REST CRUD Example Node.js & pgsql",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Hiraji/AbstractNode"
-  },
-  "version": "0.0.1",
+
+  "version": "1.0.0",
   "private": true,
   "main": "serverB.js",
   "dependencies": {
@@ -24,10 +21,14 @@
     "pgsql": "*"
   },
   "engines": {
-    "node": "0.10.36"
+    "node": "0.12.7"
   },
   "scripts": {
     "start": "node serverB.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hiraji/AbstractNode"
   },
   "keywords": [
     "node",

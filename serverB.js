@@ -22,7 +22,7 @@ app.use(cors()); //to allow origins
 
 /*MySql connection */
 var connection  = require('express-myconnection'),
-    mysql = require('mysql');
+    mysql = require('pg');
 
 app.use(
 

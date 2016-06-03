@@ -20,6 +20,12 @@ app.use(expressValidator());
 app.use(cors()); //to allow origins
 
 
+app.get('/', function (req, res) {
+  
+  res.send('Hello World, continuous deployments!');
+});
+
+
 /*MySql connection */
 var connection  = require('express-myconnection'),
     pgsql = require('pg');
@@ -63,7 +69,7 @@ app.all('/*', function(req, res, next) {
 
 app.use('/',require('./routes/indexR'));
 
-console.log("hello word");
+
 
 //start Server
 var server = app.listen(process.env.PORT || 7000,function(){

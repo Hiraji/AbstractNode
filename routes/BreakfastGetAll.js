@@ -4,13 +4,13 @@ var breakfast=
     {
         BreakfastGetAll : function(req,res,next)
         {
-            
-           var Name="Vikram";
+
+
             req.getConnection(function(err,conn){
 
                 if (err) return next("Cannot Connect");
 
-                var query = conn.query('CALL getBreakfastlist(?)',[Name],function(err,employee_D) {
+                var query = conn.query('CALL getBreakfastlist()',function(err,employee_D) {
 
 
             if(err)

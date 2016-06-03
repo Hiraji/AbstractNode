@@ -63,7 +63,7 @@ app.all('/*', function(req, res, next) {
 
 app.use('/',require('./routes/indexR'));
 
-
+console.log("hello word");
 
 //start Server
 var server = app.listen(process.env.PORT || 7000,function(){

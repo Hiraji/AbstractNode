@@ -21,18 +21,21 @@ app.use(cors()); //to allow origins
 
 
 app.get('/', function (req, res) {
-  
+
   res.send('Hello World, continuous deployments!');
 });
 
 
-/*MySql connection */
+
+
+
+/*pgsql connection */
 var connection  = require('express-myconnection'),
-    pgsql = require('pg');
+    pg = require('pg');
 
 app.use(
 
-    connection(pgsql,{
+    connection(pg,{
         host     : 'ec2-50-19-219-148.compute-1.amazonaws.com',
         user     : 'dowggepadcqdej',
         password : 'djS9n9yKoM1waUYRusvBbUF-Ay',
@@ -43,6 +46,9 @@ app.use(
     },'request')
 
 );
+
+
+
 app.all('/*', function(req, res, next) {
 //       var md = new MobileDetect(req.headers['user-agent']);
 // console.log( md.os() );

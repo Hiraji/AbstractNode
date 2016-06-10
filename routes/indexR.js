@@ -31,6 +31,7 @@ var EmployeeUpdate= require('./EmployeeUpdate.js');
 /*Insert Employee Login*/
 var EmployeeLoginCreate= require('./EmployeeLoginCreate.js');
 var EmployeeOrderCreate= require('./EmployeeOrderCreate.js');
+var getRecords= require('./getRecords.js');
 
 
 /*
@@ -74,6 +75,8 @@ router.post('/api/EmployeeOrderCreate',EmployeeOrderCreate.EmployeeOrderCreate);
 
 /*Update by id*/
 router.post('/api/EmployeeUpdate',EmployeeUpdate.EmployeeUpdate);
+
+router.get('/api/getRecords',getRecords.getRecords);
 
 
 

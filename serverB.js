@@ -9,7 +9,9 @@ var express  = require('express'),
     expressValidator = require('express-validator');
 //var MobileDetect = require('mobile-detect');
 
-
+/*pgsql connection */
+var connection  = require('express-myconnection'),
+    pg = require('pg');
 
 /*app use*/
 app.use(express.static(path.join(__dirname, 'public')));
@@ -24,14 +26,6 @@ app.get('/', function (req, res) {
 
   res.send('Hello World, continuous deployments!');
 });
-
-
-
-
-
-/*pgsql connection */
-var connection  = require('express-myconnection'),
-    pg = require('pg');
 
 app.use(
 
